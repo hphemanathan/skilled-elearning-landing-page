@@ -1,10 +1,31 @@
 :root {
   //Font Family
-  // --font-family:
+  --font-family: "Plus Jakarta Sans", sans-serif;
 
-  // //Font size
-  // --font-s-body:
-  // --font-s-h1:
+  // Font size
+  --font-s-body: clamp(
+    1rem,
+    0.9559859154929577rem + 0.18779342723004694vw,
+    1.125rem
+  );
 
+  --font-s-body-small: clamp(
+    0.875rem,
+    0.8309859154929577rem + 0.18779342723004694vw,
+    1rem
+  );
+
+  --font-s-h1: clamp(
+    2.5rem,
+    2.147887323943662rem + 1.5023474178403755vw,
+    3.5rem
+  );
+  --font-s-h2: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem);
+  --font-s-h3: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
+  --font-s-h4: clamp(
+    1.25rem,
+    1.1619718309859155rem + 0.3755868544600939vw,
+    1.5rem
+  );
   // --font-s-footer:
 }
