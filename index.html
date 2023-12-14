@@ -26,10 +26,30 @@
           the knowledge you need to live the life you want.
         </p>
         <a href="" class="section__hero--btn btn">Get Started</a>
-        <img
-          src="/public/image-hero-mobile.webp"
-          alt="Woman sitting in front of laptop and drinking coffee"
-          class="hero__img" />
+
+        <picture>
+          <source
+            media="(min-width: 1000px )"
+            srcset="
+              /public/image-hero-mobile.webp 1x,
+              opera-fullshot-2x.jpg          2x,
+              opera-fullshot-3x.jpg          3x
+            " />
+
+          <source
+            media="(min-width: 720px)"
+            srcset="
+              opera-fullshot-1x.jpg 1x,
+              opera-fullshot-2x.jpg 2x,
+              opera-fullshot-3x.jpg 3x
+            " />
+
+          <img
+            src="/public/image-hero-mobile.webp"
+            alt="Woman sitting in front of laptop and drinking coffee"
+            class="hero__img"
+            srcset="/public/image-hero-mobile@2x.webp 2x" />
+        </picture>
       </section>
       <section class="section__courses">
         <div class="section__courses__heading--box">
