@@ -14,7 +14,7 @@
   <body>
     <main class="container">
       <header class="header">
-        <img src="/logo-dark.svg" alt="" class="header__logo" />
+        <img src="/logo-dark.svg" alt="company logo" class="header__logo" />
         <a href="" class="header__btn btn">Get Started</a>
       </header>
       <section class="section__hero">
@@ -25,11 +25,31 @@
           Our modern courses across a range of in-demand skills will give you
           the knowledge you need to live the life you want.
         </p>
-        <a href="" class="header__btn btn">Get Started</a>
-        <img
-          src="/public/image-hero-mobile.webp"
-          alt="Woman sitting in front of laptop and drinking coffee"
-          class="hero__img" />
+        <a href="" class="section__hero--btn btn">Get Started</a>
+
+        <picture>
+          <source
+            media="(min-width: 1000px )"
+            srcset="
+              /public/image-hero-mobile.webp 1x,
+              opera-fullshot-2x.jpg          2x,
+              opera-fullshot-3x.jpg          3x
+            " />
+
+          <source
+            media="(min-width: 720px)"
+            srcset="
+              opera-fullshot-1x.jpg 1x,
+              opera-fullshot-2x.jpg 2x,
+              opera-fullshot-3x.jpg 3x
+            " />
+
+          <img
+            src="/public/image-hero-mobile.webp"
+            alt="Woman sitting in front of laptop and drinking coffee"
+            class="hero__img"
+            srcset="/public/image-hero-mobile@2x.webp 2x" />
+        </picture>
       </section>
       <section class="section__courses">
         <div class="section__courses__heading--box">
@@ -38,28 +58,59 @@
           </h2>
         </div>
         <article class="section__courses--course">
+          <img
+            src="./public/icon-animation.svg"
+            alt="Man running"
+            class="section__courses--course--icon" />
           Animation Learn the latest animation techniques to create stunning
-          motion design and captivate your audience. Get Started
+          motion design and captivate your audience.
+          <a href="" class="section__courses--course--btn btn">Get Started</a>
         </article>
         <article class="section__courses--course">
+          <img
+            src="./public/icon-design.svg"
+            alt="canvas"
+            class="section__courses--course--icon" />
           Design Create beautiful, usable interfaces to help shape the future of
-          how the web looks. Get Started
+          how the web looks.
+          <a href="" class="section__courses--course--btn btn">Get Started</a>
         </article>
         <article class="section__courses--course">
+          <img
+            src="./public/icon-photography.svg"
+            alt="camera"
+            class="section__courses--course--icon" />
           Photography Explore critical fundamentals like lighting, composition,
-          and focus to capture exceptional photos. Get Started
+          and focus to capture exceptional photos.
+          <a href="" class="section__courses--course--btn btn">Get Started</a>
         </article>
         <article class="section__courses--course">
+          <img
+            src="./public/icon-crypto.svg"
+            alt="small dots in a pattern"
+            class="section__courses--course--icon" />
           Crypto All you need to know to get started investing in crypto. Go
-          from beginner to advanced with this 54 hour course. Get Started
+          from beginner to advanced with this 54 hour course.
+          <a href="" class="section__courses--course--btn btn">Get Started</a>
         </article>
         <article class="section__courses--course">
+          <img
+            src="./public/icon-business.svg"
+            alt="shopping bag"
+            class="section__courses--course--icon" />
           Business A step-by-step playbook to help you start, scale, and sustain
-          your business without outside investment. Get Started
+          your business without outside investment.
+          <a href="" class="section__courses--course--btn btn">Get Started</a>
         </article>
       </section>
-      Get Started
     </main>
+    <footer class="footer">
+      <img
+        src="./public/logo-light.svg"
+        alt="company logo"
+        class="footer__logo" />
+      <a href="" class="footer__btn btn">Get Started</a>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

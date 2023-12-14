@@ -1,0 +1,13 @@
+.section__hero {
+  &--heading {
+    margin-block-end: var(--26px);
+  }
+
+  &--text {
+    margin-block-end: var(--24px);
+  }
+
+  &--btn {
+    margin-block-end: var(--70px);
+  }
+}
