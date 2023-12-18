@@ -1,4 +1,5 @@
 .container {
   width: min(calc(100% - var(--32px)), var(--70rem));
   margin-inline: auto;
+  // display: none;
 }
