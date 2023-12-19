@@ -1,2 +1,11 @@
 .footer {
+  background-color: var(--blue-dark);
+  &__wrapper {
+    width: min(calc(100% - var(--32px)), var(--70rem));
+    margin-inline: auto;
+    padding-block: var(--36px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
