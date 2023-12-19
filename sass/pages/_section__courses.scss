@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: var(--40px);
+  margin-block-end: var(--80px);
   &--heading {
     background: linear-gradient(var(--orage-pink));
     padding: var(--28px);
@@ -9,7 +10,7 @@
   }
 
   &--course {
-    background-color: pink;
+    background-color: var(--white);
     border-radius: var(--10px);
     padding-inline: var(--32px);
     &--icon {
@@ -17,8 +18,19 @@
       margin-block-end: var(--24px);
     }
 
-    // &--heading {
+    &--heading {
+      margin-block-end: var(--16px);
+    }
 
-    // }
+    &--text {
+      margin-block-end: var(--24px);
+    }
+
+    &--btn {
+      display: inline-block;
+      color: var(--pink);
+      text-decoration: none;
+      margin-block-end: var(--32px);
+    }
   }
 }
