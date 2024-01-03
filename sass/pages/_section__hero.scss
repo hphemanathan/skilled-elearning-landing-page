@@ -1,4 +1,14 @@
 .section__hero {
+  @include tab {
+    // display: flex;
+  }
+  &__img {
+    @include tab {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   &--heading {
     margin-block-end: var(--26px);
   }
