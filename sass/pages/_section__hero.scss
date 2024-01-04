@@ -1,12 +1,13 @@
 .section__hero {
   @include tab {
-    // display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
   }
   &__img {
     @include tab {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -100px;
+      right: -300px;
     }
   }
   &--heading {
