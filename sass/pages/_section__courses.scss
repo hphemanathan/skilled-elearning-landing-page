@@ -3,6 +3,12 @@
   grid-template-columns: 1fr;
   row-gap: var(--40px);
   margin-block-end: var(--80px);
+
+  @include tab {
+    width: min(calc(100% - var(--80px)), var(--70rem));
+    margin-inline: auto;
+  }
+
   &--heading {
     background: linear-gradient(var(--orage-pink));
     padding: var(--28px);

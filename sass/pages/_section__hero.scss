@@ -1,24 +1,27 @@
 .section__hero {
+  width: 100%;
   @include tab {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    display: flex;
   }
-  &__img {
+
+  &--wrapper {
     @include tab {
-      position: absolute;
-      top: -100px;
-      right: -300px;
     }
   }
+
   &--heading {
     margin-block-end: var(--26px);
   }
 
   &--text {
     margin-block-end: var(--24px);
+    line-height: 1.625;
   }
 
   &--btn {
     margin-block-end: var(--70px);
+    @include tab {
+      margin-block-end: 0;
+    }
   }
 }

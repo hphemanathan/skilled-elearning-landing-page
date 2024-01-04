@@ -4,4 +4,9 @@
   align-items: center;
   margin-block-start: var(--16px);
   margin-block-end: var(--38px);
+
+  @include tab {
+    width: min(calc(100% - var(--80px)), var(--70rem));
+    margin-inline: auto;
+  }
 }
