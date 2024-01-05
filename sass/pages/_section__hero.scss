@@ -1,11 +1,15 @@
 .section__hero {
   width: 100%;
   @include tab {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: var(--210px);
   }
 
   &--wrapper {
     @include tab {
+      margin-inline-start: var(--40px);
+      margin-block-start: var(--112px);
     }
   }
 
@@ -23,5 +27,13 @@
     @include tab {
       margin-block-end: 0;
     }
+  }
+
+  &__img {
+    // position: absolute;
+    // top: -5rem;
+    // right: -35%;
+    top: 0;
+    right: -100px;
   }
 }
