@@ -7,6 +7,9 @@
   @include tab {
     width: min(calc(100% - var(--80px)), var(--70rem));
     margin-inline: auto;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--10px);
+    row-gap: var(--56px);
   }
 
   &--heading {

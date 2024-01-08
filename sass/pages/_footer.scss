@@ -7,5 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tab {
+      width: min(calc(100% - var(--80px)), var(--70rem));
+      margin-inline: auto;
+    }
   }
 }
