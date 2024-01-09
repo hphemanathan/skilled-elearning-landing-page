@@ -1,7 +1,16 @@
 $breakpoints: (
+  "tabp": 50em,
+);
+
+$breakpoints: (
   "tab": 37.5em,
 );
 
+@mixin tabp {
+  @media (min-width: map-get($breakpoints, "tabp")) {
+    @content;
+  }
+}
 @mixin tab {
   @media (min-width: map-get($breakpoints, "tab")) {
     @content;
