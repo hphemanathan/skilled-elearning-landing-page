@@ -1,20 +1,33 @@
 .section__hero {
   width: 100%;
-  @include tab {
-    display: flex;
+  @media (min-width: 50em) {
+    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin-block-start: var(--120px);
     margin-block-end: var(--210px);
+    margin-inline-start: var(--40px);
   }
 
   &--wrapper {
     @include tab {
-      margin-inline-start: var(--40px);
-      margin-block-start: var(--112px);
-      flex: 1;
+      // margin-inline-start: var(--40px);
+      // margin-block-start: var(--112px);
+      // flex: 1 1 400px;
+      // flex-basis: 400px;
+      // max-width: 400px;
+      // align-self: flex-start;
+      //   flex: 1;
+      //   flex-basis: 400px;
+      //   max-width: 400px;
+      //   align-self: center;
     }
   }
 
   &--heading {
     margin-block-end: var(--26px);
+    text-wrap: stable;
   }
 
   &--text {
@@ -30,11 +43,10 @@
   }
 
   &__img {
-    position: absolute;
-    // top: -5rem;
-    // // right: -35%;
-    // top: 0;
-    // right: -100px;
-    flex: 2;
+    @media (min-width: 50em) {
+      position: absolute;
+      top: -50px;
+      right: -250px;
+    }
   }
 }
