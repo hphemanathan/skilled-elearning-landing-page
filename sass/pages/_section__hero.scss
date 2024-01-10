@@ -1,13 +1,14 @@
 .section__hero {
   width: 100%;
-  @media (min-width: 50em) {
+
+  @include tab-port {
     // display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     margin-block-start: var(--120px);
     margin-block-end: var(--210px);
-    margin-inline-start: var(--40px);
+    // margin-inline-start: var(--40px);
   }
 
   &--wrapper {

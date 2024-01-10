@@ -1,9 +1,9 @@
 .container {
-  // width: calc(100% - var(--32px));
-  // margin-inline: auto;
+  width: calc(100% - var(--32px));
+  margin-inline: auto;
 
   @include tab {
-    // width: min(calc(100% - var(--80px)), var(--70rem));
+    width: min(calc(100% - var(--80px)), var(--70rem));
   }
   // display: none;
 }

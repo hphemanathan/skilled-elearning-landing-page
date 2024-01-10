@@ -1,18 +1,16 @@
 $breakpoints: (
-  "tabp": 50em,
-);
-
-$breakpoints: (
   "tab": 37.5em,
+  "tab-port": 50em,
 );
 
-@mixin tabp {
-  @media (min-width: map-get($breakpoints, "tabp")) {
+@mixin tab {
+  @media (min-width: map-get($breakpoints, "tab")) {
     @content;
   }
 }
-@mixin tab {
-  @media (min-width: map-get($breakpoints, "tab")) {
+
+@mixin tab-port {
+  @media (min-width: map-get($breakpoints, "tab-port")) {
     @content;
   }
 }
