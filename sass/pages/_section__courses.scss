@@ -4,12 +4,22 @@
   row-gap: var(--40px);
   margin-block-end: var(--80px);
 
+  @include desktop {
+    margin-block-end: var(--140px);
+  }
+
   @include tab {
     // width: min(calc(100% - var(--80px)), var(--70rem));
     // margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--10px);
     row-gap: var(--56px);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--30px);
+    row-gap: var(--80px);
   }
 
   &--heading {
