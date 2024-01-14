@@ -11,14 +11,15 @@
   text-decoration: none;
 
   &:hover {
-    opacity: 0.8;
-    cursor: pointer;
   }
 }
 
 .header__btn {
   background-color: var(--blue-dark);
   color: var(--white);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .section__hero--btn {
@@ -29,4 +30,13 @@
 .footer__btn {
   background: linear-gradient(var(--blue-pink));
   color: var(--white);
+  transition: all 0.2ms;
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
 }
