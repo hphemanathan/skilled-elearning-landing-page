@@ -4,11 +4,17 @@
   align-items: center;
   margin-block-start: var(--16px);
   margin-block-end: var(--38px);
+  z-index: 100;
+
   // width: calc(100% - var(--32px));
   // margin-inline: auto;
 
   @include tab {
     // width: min(calc(100% - var(--80px)), var(--70rem));
     // margin-inline: auto;
+  }
+
+  .header__logo {
+    cursor: pointer;
   }
 }
