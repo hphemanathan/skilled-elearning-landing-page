@@ -6,12 +6,8 @@
   margin-block-end: var(--38px);
   z-index: 100;
 
-  // width: calc(100% - var(--32px));
-  // margin-inline: auto;
-
   @include tab {
-    // width: min(calc(100% - var(--80px)), var(--70rem));
-    // margin-inline: auto;
+    margin-block-start: var(--24px);
   }
 
   .header__logo {
