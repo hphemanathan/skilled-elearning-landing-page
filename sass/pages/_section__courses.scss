@@ -22,6 +22,12 @@
     row-gap: var(--80px);
   }
 
+  &--course {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &--heading {
     background: linear-gradient(var(--orage-pink));
     padding: var(--28px);
@@ -32,24 +38,31 @@
     background-color: var(--white);
     border-radius: var(--10px);
     padding-inline: var(--32px);
+
     &--icon {
       margin-block-start: var(--28-px);
       margin-block-end: var(--24px);
     }
 
     &--heading {
-      margin-block-end: var(--16px);
+      margin-block-end: var(--24px);
     }
 
     &--text {
       margin-block-end: var(--24px);
+      // flex: 1;
     }
 
     &--btn {
       display: inline-block;
       color: var(--pink);
       text-decoration: none;
+      margin-block-start: auto;
       margin-block-end: var(--32px);
+
+      &:hover {
+        color: var(--pink-light);
+      }
     }
   }
 }
